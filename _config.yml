@@ -1,0 +1,47 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 法律尽职调查导航
+subtitle: Legal DD
+description: 法律尽职调查导航 - 为律师提供实用的检索工具
+keywords: 法律, 尽职调查, 法律尽职调查, 尽职调查导航,Due Diligence, Legal
+author: TonyZ
+language: zh-CN
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://dd.legal
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+dpublic_dir: public
+.tag_dir: tags
+archive_dir: archives
+category_dir: categories
+tcode_dir: downloads/code
+ininclude_dir:
+post_asset_folder: true
+dpublic_resource_folder: false
+relative_link: false
+dfuture: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Theme
+theme: aqua
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo:
+  branch:
