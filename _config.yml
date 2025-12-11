@@ -20,16 +20,15 @@ permalink_defaults:
 
 # Directory
 source_dir: source
-dpublic_dir: public
-.tag_dir: tags
+public_dir: public
+tag_dir: tags
 archive_dir: archives
 category_dir: categories
-tcode_dir: downloads/code
-ininclude_dir:
+code_dir: downloads/code
+include_dir:
 post_asset_folder: true
-dpublic_resource_folder: false
+public_resource_folder: false
 relative_link: false
-dfuture: true
 highlight:
   enable: true
   line_number: true

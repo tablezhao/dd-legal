@@ -14,7 +14,12 @@ body {
 
 a {
   text-decoration: none;
-  cursor: pointer;
+  color: #6b6882;
+  transition: all 0.4s;
+  &:hover {
+    text-decoration: none;
+    color: #1abc9c;
+  }
 }
 
 ul {

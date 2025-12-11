@@ -1,0 +1,10 @@
+doctype html
+html(lang=config.language)
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title #{config.title}
+  body
+    .container
+      h1 #{page.title || config.title}
+      .content!= page.content

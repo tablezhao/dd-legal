@@ -1,0 +1,15 @@
+extends _partial/layout
+
+block content
+  .archive
+    include _components/nav
+    +nav(theme.page_nav)
+    .box
+      i.icon-location
+      include _components/blogInfo
+      include _components/posts
+      .content
+        .category-list
+          .circle 标签
+          .list!=list_tags({style: 'none', separator: '  '})
+        +tags()
