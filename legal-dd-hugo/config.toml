@@ -1,0 +1,17 @@
+baseURL = "http://example.org/"
+languageCode = "zh-CN"
+title = "法律尽职调查导航"
+description = "法律尽职调查工作的网站导航工具"
+
+[params]
+  author = "TonyZ"
+  description = "法律尽职调查工作的网站导航工具"
+  themeColor = "#ffffff"
+  darkThemeColor = "#121212"
+
+# 简洁主题配置
+theme = "clean-theme"
+
+[language]
+  languageName = "中文"
+  weight = 1

@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.author }}">
+
+{{- with .Site.Params.themeColor }}
+  <meta name="theme-color" content="{{ . }}"
+    media="(prefers-color-scheme: light)">
+{{- end }}
+
+{{- with .Site.Params.darkThemeColor }}
+  <meta name="theme-color" content="{{ . }}"
+    media="(prefers-color-scheme: dark)">
+{{- end }}
+
+{{- $styles := resources.Get "css/style.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}"
+  integrity="{{ $styles.Data.Integrity }}"
+  crossorigin="anonymous"
+  media="all">
